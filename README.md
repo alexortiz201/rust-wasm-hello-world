@@ -11,3 +11,9 @@ Thanks to https://github.com/rustwasm/create-wasm-app/issues/215, I was able to 
 [^3]: https://github.com/rustwasm/wasm-bindgen/issues/4211#issue-2598192238
 [^4]: https://github.com/rustwasm/rust-webpack-template/issues/191
 [^5]: https://github.com/rustwasm/wasm-bindgen/discussions/4171
+
+
+### NOTES:
+ - pnpm is being used
+ - inside of www run pnpm i to install deps
+ - when wanting to test build, run `npx vite` from www folder
