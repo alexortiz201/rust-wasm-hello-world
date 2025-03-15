@@ -17,3 +17,4 @@ Thanks to https://github.com/rustwasm/create-wasm-app/issues/215, I was able to 
  - pnpm is being used
  - inside of www run pnpm i to install deps
  - when wanting to test build, run `npx vite` from www folder
+ - Current flow, when templated into another program, I use `wasm-pack build` inside the directory since wasm-bindgen causes issues.
