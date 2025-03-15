@@ -1,4 +1,7 @@
 import { defineConfig } from 'vite'
+import type { UserConfig } from 'vite'
+
+// Used for easy path resolution in both windows and *nix envs
 import { resolve } from 'path'
 
 import wasm from "vite-plugin-wasm";
@@ -11,6 +14,7 @@ export default defineConfig({
         outDir: 'dist',
         rollupOptions: {
             input: {
+                // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import.meta
                 main: resolve(import.meta.url, 'index.html'),
                 bootstrap: resolve(import.meta.url, 'bootstrap.js')
             }
@@ -23,4 +27,4 @@ export default defineConfig({
         wasm(),
         topLevelAwait()
     ]
-})
+}) satisfies UserConfig

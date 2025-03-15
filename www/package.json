@@ -1,6 +1,7 @@
 {
   "name": "www",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,11 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "path": "0.12.7",
     "wasm-game-of-life": "file:../pkg"
   },
   "devDependencies": {
-    "vite": "6.1.0",
-    "vite-plugin-top-level-await": "1.4.4",
+    "vite": "6.2.2",
+    "vite-plugin-top-level-await": "1.5.0",
     "vite-plugin-wasm": "3.4.1"
   }
 }
